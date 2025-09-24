@@ -1,16 +1,17 @@
 {{-- <section class=""> --}}
-<section class=" sticky top-16 z-[9998] bg-white dark:bg-gray-900">
-    <div class="max-w-screen-xl mx-auto px-4 bg-primary-600 shadow-md rounded-b-2xl">
+<section class=" bg-white dark:bg-gray-900 relative overflow-hidden sectorPage1-cardDown">
+    <div class="relative max-w-screen-xl mx-auto px-4 shadow-md bg-gradient-to-tr from-primary-600 to-primary-800 rounded-b-2xl overflow-hidden">
+        {{-- bg-gradient-to-r from-primary-700 to-primary-900 --}}
         <!-- Start coding here -->
-        <div class="relative ">
+        <div class="relative z-20">
             <div
-                class="flex flex-col items-center justify-between p-4 space-y-3 md:flex-row md:space-y-0 md:space-x-4 pt-6">
+                class="flex flex-col items-center justify-between py-4 px-2 space-y-3 md:flex-row md:space-y-0 md:space-x-4 pt-6">
                 <div class="w-full md:w-1/2">
-                    <form class="flex items-center">
+                    <form class="flex items-center ">
                         <label for="simple-search" class="sr-only">Search</label>
                         <div class="relative w-full">
-                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none ">
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-200 dark:text-gray-400"
                                     fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
                                         d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
@@ -18,8 +19,8 @@
                                 </svg>
                             </div>
                             <input type="text" id="simple-search"
-                                class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                placeholder="Search" required="">
+                                class="block w-full p-2 pl-10 text-sm text-black border border-gray-300 rounded-full bg-white focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="Search..." required="">
                         </div>
                     </form>
                 </div>
@@ -27,7 +28,7 @@
                     class="flex flex-col items-stretch justify-end flex-shrink-0 w-full space-y-2 md:w-auto md:flex-row md:space-y-0 md:items-center md:space-x-3">
                     <div class="flex items-center w-full space-x-3 md:w-auto">
                         <button id="actionsDropdownButtonKecamatan" data-dropdown-toggle="actionsDropdownKecamatan"
-                            class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg md:w-auto focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                            class="flex items-center justify-center w-full px-6 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-full md:w-auto focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                             type="button">
                             <svg class="-ml-1 mr-1.5 w-5 h-5" fill="currentColor" viewbox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -53,7 +54,7 @@
                             </div>
                         </div>
                         <button id="actionsDropdownButtonKelurahan" data-dropdown-toggle="actionsDropdownKelurahan"
-                            class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg md:w-auto focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                            class="flex items-center justify-center w-full px-6 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-full md:w-auto focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                             type="button">
                             <svg class="-ml-1 mr-1.5 w-5 h-5" fill="currentColor" viewbox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -139,16 +140,23 @@
                 </div>
             </div>
         </div>
-        <div class="flex overflow-x-auto gap-4 py-4 px-2 scrollbar-custom">
-            @for ($i = 0; $i < 18; $i++)
-                <a
-                    class="flex-shrink-0 text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none 
-        focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-gray-800 dark:text-white 
+        <div class="relative z-10">
+            <div class="flex overflow-x-auto gap-4 py-4 px-2 scrollbar-custom z-0 scrollbar-custom2">
+                @for ($i = 0; $i < 18; $i++)
+                    <a
+                        class="flex-shrink-0 cursor-pointer text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none
+        focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-gray-800 dark:text-white
         dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
-                    Kuliner
-                </a>
-            @endfor
+                        Kuliner
+                    </a>
+                @endfor
+            </div>
         </div>
+
+        <img id="unsplash-image" class="absolute inset-0 z-0 w-full h-full object-cover transition-opacity ease-in-out duration-1000 opacity-100" src="" alt="Rotating Unsplash Image" >
 
     </div>
 </section>
+
+@vite('resources/js/visitor/sector/page1.js')
+@vite('resources/js/visitor/sector/switchbg.js')

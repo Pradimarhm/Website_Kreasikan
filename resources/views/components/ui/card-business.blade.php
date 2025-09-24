@@ -1,4 +1,4 @@
-<div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+<div class="rounded-lg border border-gray-200 bg-gray-50 p-6 shadow-sm  dark:shadow-none dark:border-gray-700 dark:bg-gray-800 sectorPage3-cardUp">
     <div class="w-full">
         <a href="#">
             <img class="mx-auto h-32 w-32 rounded-full object-cover"
@@ -55,7 +55,7 @@
 
             <a href="/usaha"
                 class="inline-flex items-center rounded-lg bg-primary-100 px-5 py-2.5 text-sm font-medium text-primary-400 hover:bg-primary-800
-                hover:text-white focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-200 
+                hover:text-white focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-200
                 dark:text-primary-700 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                 Selengkapnya
             </a>

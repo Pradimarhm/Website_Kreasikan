@@ -83,3 +83,65 @@ Route::prefix('entrepreneur')->group(function () {
         return view('main-entrepreneur.profile');
     });
 });
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('main-admin.index');
+    });
+
+    Route::get('/business-submission', function () {
+        return view('main-admin.business-submission');
+    });
+
+    Route::get('/business', function () {
+        return view('main-admin.business');
+    });
+
+    Route::get('/business-report', function () {
+        return view('main-admin.business-report');
+    });
+
+    Route::get('/business-nonaktif', function () {
+        return view('main-admin.business-nonaktif');
+    });
+
+    Route::get('/sector/form', function () {
+        return view('main-admin.sector-form');
+    });
+
+    Route::get('/sector', function () {
+        return view('main-admin.sector');
+    });
+
+    Route::get('/event/form', function () {
+        return view('main-admin.event-form');
+    });
+
+    Route::get('/event-self', function () {
+        return view('main-admin.event-self');
+    });
+
+    Route::get('/event-submission', function () {
+        return view('main-admin.event-submission');
+    });
+
+    Route::get('/event', function () {
+        return view('main-admin.event');
+    });
+
+    Route::get('/article/form', function () {
+        return view('main-admin.article-form');
+    });
+
+    Route::get('/article', function () {
+        return view('main-admin.article');
+    });
+
+    Route::get('/product', function () {
+        return view('main-admin.product');
+    });
+
+    Route::get('/inbox', function () {
+        return view('main-admin.inbox');
+    });
+});

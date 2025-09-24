@@ -1,63 +1,146 @@
 <footer class="p-4 bg-white sm:p-6 pt-12 dark:bg-gray-800">
     <div class="mx-auto max-w-screen-xl">
-        <div class="md:flex md:justify-between">
-            <div class="mb-6 flex justify-center md:block pt-4">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ekraf</span>
-                </a>
-            </div>
+        <div class="flex gap-4 justify-between">
+            <div class="md:grid md:grid-cols-3 gap-8 ">
+                <div class="flex-col justify-between pt-4">
+                    <div class="flex items-center mb-16">
+                        <img src="{{ asset('img\Logo\logo_default_text_putih.svg') }}"
+                            class="hidden dark:block mr-3 w-screen h-auto" alt="" />
+                        <img src="{{ asset('img\Logo\logo__default.svg') }}"
+                            class="block dark:hidden mr-3 w-screen h-auto" alt="" />
+                        {{-- <img src="{{asset('img/Logo/logoBaruColorWhite.svg')}}" class="mr-3 w-96 h-auto" alt="" /> --}}
+                        {{-- <span class="self-center text-5xl flex flex-col font-semibold whitespace-nowrap dark:text-white">KREASIKAN
+                        <span class="text-base font-normal">E-directory Ekonomi Kreatif Nganjuk</span>
+                    </span> --}}
+                    </div>
 
-            <div class="md:grid md:grid-cols-2 gap-8 ">
-                <div class="pt-4">
-                    <h2 class="mb-6 text-2xl font-semibold text-gray-900 dark:text-white">Media Sosial</h2>
-                    <ul class="text-gray-600 dark:text-gray-400">
-                        <li class="mb-4">
-                            <div class="flex">
-                                <img src="https://informasi-ekonomi-kreatif-nganjuk.pbltifnganjuk.com/assets/svg/arsitektur.svg"
-                                    alt="Arsitektur" class="w-8 h-8  object-contain mr-4">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-                            </div>
-                        </li>
-                        <li class="mb-4">
-                            <div class="flex">
-                                <img src="https://informasi-ekonomi-kreatif-nganjuk.pbltifnganjuk.com/assets/svg/arsitektur.svg"
-                                    alt="Arsitektur" class="w-8 h-8  object-contain mr-4">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-                            </div>
-                        </li>
-                        <li class="mb-4">
-                            <div class="flex">
-                                <img src="https://informasi-ekonomi-kreatif-nganjuk.pbltifnganjuk.com/assets/svg/arsitektur.svg"
-                                    alt="Arsitektur" class="w-8 h-8  object-contain mr-4">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="md:mb-0 mb-8">
+                        <a href="https://maps.app.goo.gl/LVNUHf65uaR3vVm59" target="_blank"
+                            class="flex items-start flex-col">
+                            <span class="self-start text-lg font-semibold whitespace-nowrap dark:text-white">NGANJUK
+                                CREATIVE HUB</span>
+                            <span class="self-start font-normal text-sm text-gray-600 dark:text-white">
+                                Dinas Kepemudaan Olahraga Kebudta Kabupaten NGANJUK
+                            </span>
+                            <span class="self-start font-normal text-sm text-gray-600 dark:text-white">
+                                Gedung Balai Budaya Mpu Sindok, Jl. Diponegoro 29, Nganjuk
+                            </span>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="pt-4">
-                    <h2 class="mb-6 text-2xl font-semibold text-gray-900 dark:text-white">Didukung Oleh</h2>
-                    <ul class="text-gray-900 ">
-                        <li class="mb-4 flex">
-                            <img src="https://informasi-ekonomi-kreatif-nganjuk.pbltifnganjuk.com/assets/svg/arsitektur.svg"
-                                alt="Arsitektur" class="w-16 h-16  object-contain mr-4">
-                            <img src="https://informasi-ekonomi-kreatif-nganjuk.pbltifnganjuk.com/assets/svg/arsitektur.svg"
-                                alt="Arsitektur" class="w-16 h-16  object-contain mr-4">
+                <div class="pt-2 flex md:justify-center justify-start">
+                    <div>
+                        <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Media Sosial</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <div class="flex items-center gap-4">
+                                    {{-- <svg class="w-8 h-8 text-gray-800 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                                        clip-rule="evenodd" />
+                                </svg> --}}
+
+                                    <a href="https://www.instagram.com/dinasporabudpar_nganjuk/" target="_blank"
+                                        class="hover:underline font-normal text-sm ">Instagram</a>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="flex items-center gap-4">
+                                    {{-- <svg class="w-8 h-8 text-gray-800 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                                        clip-rule="evenodd" />
+                                </svg> --}}
+
+                                    <a href="https://github.com/themesberg/flowbite" target="_blank"
+                                        class="hover:underline font-normal text-sm ">Facebook</a>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="flex items-center gap-5">
+                                    {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-800 dark:text-gray-400"
+                                    fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                                </svg> --}}
+
+                                    <a href="https://www.tiktok.com/@disporabudpar.nganjuk?_t=ZS-8xUmkNrue52&_r=1"
+                                        target="_blank" class="hover:underline font-normal text-sm ">Tiktok</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h2 class="mb-2 mt-8 text-lg font-semibold text-gray-900 dark:text-white">Kontak kami</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <div class="flex items-center gap-4">
+                                    {{-- <svg class="w-6 h-6 text-gray-800 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+                                        clip-rule="evenodd" />
+                                    <path fill="currentColor"
+                                        d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z" />
+                                </svg> --}}
+
+
+                                    <a href="https://wa.me/6281555922059" target="_blank"
+                                        class="hover:underline font-normal text-sm ">+62 815-5592-2059 (Wahyu)</a>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="flex items-center gap-4">
+                                    {{-- <svg class="w-6 h-6 text-gray-800 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+                                        clip-rule="evenodd" />
+                                    <path fill="currentColor"
+                                        d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z" />
+                                </svg> --}}
+
+
+                                    <a href="https://wa.me/6285808441941" target="_blank"
+                                        class="hover:underline font-normal text-sm ">+62 858-0844-1941 (Alam)</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <h2 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Didukung Oleh</h2>
+                    <ul class="text-gray-900 flex flex-col gap-4">
+                        <li class="mb-0 flex items-center">
+                            <img src="{{ asset('img/diporalogo.svg') }}" alt="Arsitektur"
+                                class="w-1/4 h-auto  object-contain mr-4 dark:hidden">
+                            <img src="{{ asset('img/Logo-Porabudpar-wrn.png') }}" alt="Arsitektur"
+                                class="w-1/4 h-auto  object-contain mr-4 hidden dark:block">
                             <div class="">
-                                <a href="#" class="hover:underline font-bold dark:text-white">
-                                    Privacy Policy
+                                <a href="https://disporabudpar.nganjukkab.go.id/" target="_blank"
+                                    class="hover:underline font-semibold dark:text-white">
+                                    <span class="block font-normal text-sm">Dinas Porabudpar</span>
+                                    <span class="block font-normal text-sm dark:text-gray-400">Kabupaten Nganjuk</span>
                                 </a>
-                                <p class="dark:text-gray-400">kelompok</p>
+                                {{-- <p class="dark:text-gray-400">Kabupaten Nganjuk</p> --}}
                             </div>
                         </li>
-                        <li class="mb-4 flex">
-                            <img src="https://informasi-ekonomi-kreatif-nganjuk.pbltifnganjuk.com/assets/svg/arsitektur.svg"
-                                alt="Arsitektur" class="w-16 h-16  object-contain mr-4">
+                        <li class="mb-4 flex items-center">
+                            <img src="{{ asset('img/LOGO-POLITEKNIK-NEGERI-JEMBER-gabung.png') }}" alt="Arsitektur"
+                                class="w-1/4 h-auto  object-contain mr-4">
                             <div class="">
-                                <a href="#" class="hover:underline font-bold dark:text-white">
-                                    Privacy Policy
+                                <a href="https://maps.app.goo.gl/jN15YT9u4ZuH8LaE6" target="_blank"
+                                    class="hover:underline font-semibold dark:text-white">
+                                    <span class="block font-normal text-sm">Politeknik Negeri Jember</span>
+                                    <span class="block font-normal text-sm dark:text-gray-400">PSDKU Kab. Nganjuk</span>
                                 </a>
-                                <p class="dark:text-gray-400">kelompok</p>
+                                {{-- <p class="">PSDKU Kab. Nganjuk</p> --}}
                             </div>
                         </li>
                     </ul>
@@ -67,10 +150,11 @@
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com"
-                    class="hover:underline">A++™</a>. All Rights Reserved.
+                    class="hover:underline">A++ Informatic Engginering Team™</a>. All
+                Rights Reserved.
             </span>
-            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            {{-- <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <a href="#" class="text-gray-500 flex flex-row gap-4 hover:text-gray-900 dark:hover:text-white">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"
                             d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
@@ -104,7 +188,9 @@
                             clip-rule="evenodd" />
                     </svg>
                 </a>
-            </div>
+            </div> --}}
         </div>
     </div>
 </footer>
+
+{{-- <script src="{{ asset('resources/js/splittext.js') }}"></script> --}}

@@ -1,5 +1,5 @@
 <div class="shadow-md rounded-lg p-4 space-y-4 sticky top-16 z-[99]">
-    <form class="flex items-center my-4">
+    <form class="flex items-center my-4 eventDetail-search-textboxRight3">
         <label for="search" class="sr-only">Cari</label>
         <div class="relative w-full">
             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -13,7 +13,7 @@
                 placeholder="Cari berita..." required>
         </div>
     </form>
-    <h2 class="text-md font-semibold mb-4 text-gray-800 dark:text-white">Event Terdekat</h2>
+    <h2 class="text-md font-semibold mb-4 text-gray-800 dark:text-white eventDetail-search-textboxRight">Event Terdekat</h2>
     {{-- @for ($i = 0; $i < 4; $i++)
                 @endfor --}}
     <x-ui.list-event />

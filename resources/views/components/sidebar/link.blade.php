@@ -7,7 +7,7 @@
 ])
 
 <a href="{{ $href }}"
-    class=" {{ $active ? ' text-primary-500' : 'text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700' }} flex items-center p-2  rounded-lg group">
+    class=" {{ $active ? ' text-primary-500' : 'text-yellow-400 ' }} flex items-center p-2  rounded-lg group hover:bg-gray-100 dark:hover:bg-gray-700">
     {!! $icon !!}
     <span class="flex-1 ms-3 whitespace-nowrap">{{ $label }}</span>
     @if ($badge)

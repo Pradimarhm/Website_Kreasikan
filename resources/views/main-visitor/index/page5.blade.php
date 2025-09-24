@@ -1,15 +1,17 @@
 <section id="information" class="flex flex-col items-center px-4 py-10 bg-white dark:bg-gray-900">
-    <h1 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">Informasi Buat Kamu</h1>
+    <h1 class="text-2xl md:text-3xl font-bold text-primary-900 dark:text-primary-800 mb-6 page5-textboxUp">INFORMASI BUAT
+        {{-- <span class="text-primary-950"></span> --}}
+        <span class="text-yellow-400">KAMU</span></h1>
 
     <!-- Tombol Navigasi -->
-    <div class="flex flex-row gap-4 justify-center mb-8 w-full max-w-xl">
-        <button
-            class="w-1/2 text-center py-2 px-4 font-medium text-white border border-gray-300 dark:text-white bg-primary-600 dark:border-gray-600 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none switch-section"
+    <div class="flex flex-row gap-4 justify-center mb-8 w-full max-w-xl page5-cardUp">
+        <button id="toggleButtonEvent"
+            class="w-1/2 text-center py-2 px-4 font-medium text-white border border-gray-300 dark:text-white bg-primary-900 dark:border-gray-600 rounded-full hover:bg-primary-700 hover:text-white hover:duration-300 duration-300 dark:hover:bg-gray-800 focus:outline-none switch-section"
             data-target="Event">
             Event
         </button>
-        <button
-            class="w-1/2 text-center py-2 px-4 font-medium text-gray-800 border border-gray-300 dark:text-white dark:border-gray-600 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none switch-section"
+        <button id="toggleButtonArtikel"
+            class="w-1/2 text-center py-2 px-4 font-medium text-primary-900 border border-gray-300 dark:text-white dark:border-gray-600 rounded-full hover:bg-primary-700 hover:text-white hover:duration-300 duration-300 dark:hover:bg-gray-800 focus:outline-none switch-section"
             data-target="Artikel">
             Artikel
         </button>
@@ -17,7 +19,7 @@
 
     <!-- Konten Event -->
 
-    <div id="section-event" class="w-full max-w-7xl fade-section show">
+    <div id="section-event" class="w-full max-w-7xl fade-section show page5-cardUp13 page5-cardUp13-3">
         <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
             <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
 
@@ -80,7 +82,7 @@
     </div>
 
     <!-- Konten Artikel -->
-    <div id="section-article" class="w-full max-w-7xl fade-section hidden">
+    <div id="section-article" class="w-full max-w-7xl fade-section hidden page5-cardUp13-2">
         <div class="flex flex-row gap-6 overflow-x-auto px-2 pb-6 dark:dark scrollbar-custom ">
             @for ($i = 0; $i < 6; $i++)
                 <x-ui.card-article size="w-[300px]"
@@ -138,9 +140,11 @@
                     'dark:bg-gray-800', 'dark:text-white', 'dark:border-gray-600');
             });
 
-            this.classList.add('bg-primary-600', 'text-white');
+            this.classList.add('bg-primary-900', 'text-white');
             this.classList.remove('bg-white', 'text-gray-800', 'border', 'border-gray-300',
                 'dark:bg-gray-800', 'dark:text-white', 'dark:border-gray-600');
         });
     });
 </script>
+
+@vite('resources/js/visitor/index/page5.js')

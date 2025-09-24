@@ -3,7 +3,7 @@
 
 <x-head></x-head>
 
-<body class="h-full">
+<body class="h-full scrollbar-custom">
     <div class="min-h-full">
 
         <x-navbar.visitor />
@@ -19,5 +19,8 @@
         <x-footer></x-footer>
 
 </body>
+
+{{-- @vite('resources/js/app.js') --}}
+
 
 </html>

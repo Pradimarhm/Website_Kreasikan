@@ -13,10 +13,11 @@
 
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
-                <div class="shrink-0">
-                    <img class="size-8"
-                        src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                <div class="shrink-0 flex flex-row items-center gap-2">
+                    <img class="w-5 h-auto"
+                        src="{{asset('img/Logo/Logo_default.svg')}}"
                         alt="Your Company">
+                    <h1 class="text-black font-semibold dark:text-white">KREASIKAN</h1>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -40,7 +41,7 @@
 
                         <button id="dropdownNavButton" data-dropdown-toggle="dropdownNav" data-dropdown-delay="500"
                             data-dropdown-trigger="hover"
-                            class="{{ request()->is('informasi') ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium flex items-center"
+                            class="{{ request()->is('informasi') ? 'bg-gray-900 text-white' : 'text-yellow-300 hover:text-primary-400 transition duration-150 ease-in-out' }} rounded-md px-3 py-2 text-sm font-medium flex items-center"
                             type="button">Informasi
                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
@@ -62,7 +63,7 @@
                                     <a href="/event"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Event</a>
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
                                 </li>
@@ -70,7 +71,7 @@
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
                                         out</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
 
@@ -81,7 +82,7 @@
                 <div class="ml-4 flex items-center md:ml-6">
                     <div class="flex space-x-2">
                         <button type="button"
-                            class="p-2 relative rounded-full bg-transparent 
+                            class="p-2 relative rounded-full bg-transparent
                         hover:bg-primary-500 text-gray-400 hover:text-white  focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">View notifications</span>

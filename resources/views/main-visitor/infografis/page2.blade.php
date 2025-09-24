@@ -1,15 +1,18 @@
-<section class="bg-white dark:bg-gray-900 sm:px-6 py-8">
-    <div class="">
+<section class=" bg-white dark:bg-gray-900 sm:px-6 py-8 overflow-hidden infografisPage2">
+    <div class="max-w-screen-xl mx-auto">
 
         <div class=" w-full bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4 md:p-6">
             <div class="flex justify-between mb-5">
                 <div>
-                    <h5 class="leading-none text-3xl font-bold text-gray-900 dark:text-white pb-2">Pelaku Usaha Per
+                    <h5
+                        class="leading-none text-3xl font-bold text-gray-900 dark:text-white pb-2 infografisPage2-textboxUp12">
+                        Pelaku Usaha Per
                         Sektor</h5>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Sales this week</p>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400 infografisPage2-textboxUp15">Sales
+                        this week</p>
                 </div>
                 <div
-                    class="flex items-center px-2.5 py-0.5 text-base font-semibold text-green-500 dark:text-green-500 text-center">
+                    class="flex items-center px-2.5 py-0.5 text-base font-semibold text-green-500 dark:text-green-500 text-center infografisPage2-textboxUp15">
                     23%
                     <svg class="w-3 h-3 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 14">
@@ -25,7 +28,7 @@
                     <!-- Button -->
                     <button id="dropdownDefaultButton" data-dropdown-toggle="lastDaysdropdown"
                         data-dropdown-placement="bottom"
-                        class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
+                        class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white infografisPage2-textboxUp18"
                         type="button">
                         Last 7 days
                         <svg class="w-2.5 m-2.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +68,7 @@
                         </ul>
                     </div>
                     <a href="#"
-                        class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-600 hover:text-blue-700 dark:hover:text-blue-500  hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2">
+                        class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-600 hover:text-blue-700 dark:hover:text-blue-500  hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2 infografisPage2-textboxUp2">
                         Sales Report
                         <svg class="w-2.5 h-2.5 ms-1.5 rtl:rotate-180" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
@@ -128,7 +131,10 @@
                 },
             },
             legend: {
-                show: true
+                show: true,
+                labels: {
+                    colors: ['gray', 'gray'] // 👈 warna teks legend, urutan = series
+                }
             },
             fill: {
                 type: "gradient",
@@ -172,3 +178,5 @@
         }
     </script>
 </section>
+
+@vite('resources/js/visitor/infografis/page2.js')

@@ -1,8 +1,8 @@
-<section class="bg-white dark:bg-gray-900 sm:px-6">
+<section class="bg-white dark:bg-gray-900 sm:px-6 articelPage">
     <div class="grid max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
         {{-- side link --}}
         <div class="lg:col-span-3 lg:mr-3">
-            <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 space-y-4 sticky top-16 z-[99]">
+            <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-4 space-y-4 sticky top-16 z-[99] articelPage1-cardDRight">
                 <form class="flex items-center">
                     <label for="search" class="sr-only">Cari</label>
                     <div class="relative w-full">
@@ -46,8 +46,8 @@
         {{-- daftar usaha --}}
         <div class="mb-6 lg:mb-0 lg:mt-0 mt-5 lg:col-span-9 flex flex-col justify-center">
             <div class=" w-full flex-none ">
-                <h2 class="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Artikel</h2>
-                <div class="mb-4 grid gap-4 md:mb-8 md:grid-cols-3 xs:grid-cols-2 grid-cols-1">
+                <h2 class="text-xl font-semibold mb-4 text-gray-800 dark:text-white articelPage1-textBoxUp">Artikel</h2>
+                <div class="mb-4 grid gap-4 md:mb-8 md:grid-cols-3 xs:grid-cols-2 grid-cols-1 articelPage1-cardUp">
                     @for ($i = 0; $i < 9; $i++)
                         <x-ui.card-article size=""
                             title="Judul Artikel Kamu Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam velit praesentium dolores aliquam similique unde. Corrupti quo assumenda cum incidunt consequuntur earum. Veritatis!"
@@ -61,6 +61,8 @@
         </div>
     </div>
 </section>
+
+@vite('resources/js/visitor/article/page1.js')
 
 <script>
     $(document).ready(function() {

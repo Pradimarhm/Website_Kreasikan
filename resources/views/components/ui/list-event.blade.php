@@ -2,7 +2,7 @@
     <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
         <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
 
-            <ol class="relative border-s border-gray-200 dark:border-gray-700">
+            <ol class="relative border-s border-gray-200 dark:border-gray-700 eventDetail-search-textboxRight2">
                 @for ($i = 0; $i < 1; $i++)
                     <li class="mb-10 ms-4">
                         <div
@@ -28,7 +28,7 @@
                     </li>
                 @endfor
             </ol>
-            <div class="max-w-3xl mx-auto text-center">
+            <div class="max-w-3xl mx-auto text-center eventDetail-search-textboxRight2">
                 <div class="mt-4">
                     <a href="#" title=""
                         class="inline-flex items-center text-lg font-medium text-primary-600 hover:underline dark:text-primary-500">

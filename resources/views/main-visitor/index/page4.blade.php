@@ -10,13 +10,15 @@
 </div> --}}
 
 <section id="creativeCenter" class="flex flex-col items-center py-10 bg-gray-50 dark:bg-gray-900 transition-colors">
-    <h1 class="mb-10 text-3xl font-bold text-gray-900 dark:text-white">Creative Center</h1>
+    <h1 class="mb-10 text-3xl font-bold text-primary-950 dark:text-white page4-textboxUp">SEKTOR
+        <span class="text-primary-800">EKONOMI KREATIF</span>
+        </h1>
 
     <div class="w-full px-4">
-        <div class="flex flex-col gap-6 w-full">
+        <div id="sliderContainer" class="flex flex-col gap-6 w-full overflow-hidden">
 
             {{-- Card Atas --}}
-            <div class="flex flex-row gap-6 overflow-x-auto px-2 py-4 dark:dark scrollbar-custom ">
+            <div id="sliderTrack" class="flex flex-row gap-6 overflow-x-auto px-2 py-4 dark:dark scrollbar-custom page4-cardLeft">
                 @for ($i = 0; $i < 6; $i++)
                     <x-ui.card-low
                         title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam, provident, impedit earum saepe aliquam qui corporis totam alias ullam quibusdam culpa quos cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt quos ratione veritatis facilis excepturi ipsa laudantium ad aperiam rem!"
@@ -55,7 +57,7 @@
             </div>
 
             {{-- Card Bawah --}}
-            <div class="flex flex-row gap-6 overflow-x-auto px-2 py-4 scrollbar-custom">
+            <div class="flex flex-row gap-6 overflow-x-auto px-2 py-4 scrollbar-custom page4-cardRight">
                 @for ($i = 0; $i < 6; $i++)
                     <x-ui.card-low
                         title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam, provident, impedit earum saepe aliquam qui corporis totam alias ullam quibusdam culpa quos cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt quos ratione veritatis facilis excepturi ipsa laudantium ad aperiam rem!"
@@ -71,3 +73,6 @@
 
 
 </section>
+
+@vite('resources/js/visitor/index/page4.js')
+@vite('resources/js/visitor/index/animationSlider.js')

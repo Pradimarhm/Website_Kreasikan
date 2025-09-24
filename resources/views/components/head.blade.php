@@ -2,6 +2,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="{{ asset('img\Logo\Logo_default.svg') }}" type="image/svg+xml">
+
     @vite('resources/css/app.css')
 
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
@@ -21,8 +23,19 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
+
+    {{-- animasi gsap --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+
     {{-- efek scrollbar card-low --}}
     <style>
+        .scrollbar-custom2::-webkit-scrollbar {
+            display: none;
+        }
+
         .scrollbar-custom::-webkit-scrollbar {
             height: 6px;
             width: 6px;
@@ -40,7 +53,8 @@
         }
 
         .scrollbar-custom:hover::-webkit-scrollbar-thumb {
-            background-color: #888;
+            background-color: #1e3a8a;
+            opacity: 0.8;
             transition: background-color 0.6s ease-in-out;
         }
 
