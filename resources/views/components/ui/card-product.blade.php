@@ -32,23 +32,26 @@
 
     <div class="h-24 w-full">
         <a href="#">
-            <img class="mx-auto h-full dark:hidden"
+            <img class="w-" src="https://images.unsplash.com/photo-1622219999459-ab5b14e5f45a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            {{-- <img class="mx-auto h-full dark:hidden"
                 src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front.svg" alt="" />
             <img class="mx-auto hidden h-full dark:block"
-                src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg" alt="" />
-        </a>
+                src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg" alt="" /> --}}
+        {{-- </a>
     </div>
     <div class="pt-6">
 
         <a href="#"
-            class="text-sm font-semibold leading-tight text-gray-900 hover:underline dark:text-white">{{ Str::limit('Apple iMac 27", 1TB HDD, Retina 5K Display, M3 Max', 30, '...') }}</a>
+            class="text-sm font-medium leading-tight text-gray-900 hover:underline dark:text-white">{{ Str::limit('Apple iMac 27", 1TB HDD, Retina 5K Display, M3 Max', 30, '...') }}</a>
 
         <div class="mt-4 block items-center justify-between gap-4">
-            <p class=" sm:grid-cols-1 text-xl font-extrabold leading-tight text-gray-900 dark:text-white">
+            <p class=" sm:grid-cols-1 text-lg font-bold leading-tight text-gray-900 dark:text-white">
                 Rp. {{ Str::limit('1.200.000', 9, '..') }}</p>
         </div>
     </div>
 </div> --}}
+
+{{--
 @props([
     'id' => uniqid(),
     'image' => '',
@@ -107,5 +110,19 @@
                 Rp. {{ \Illuminate\Support\Str::limit($price, 9, '..') }}
             </p>
         </div>
+    </div>
+</div> --}}
+
+<div class="rounded-lg border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 overflow-hidden">
+    <div class="w-full h-72 object-fill flex overflow-hidden items-center">
+        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1622219999459-ab5b14e5f45a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <div class="flex flex-col p-4 gap-2">
+        <h1 class="text-base font-semibold leading-tight text-primary-500 hover:underline dark:text-primary-500">Celengan Babi 5Kg</h1>
+        <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget viverra libero. Quisque porttitor
+            metus vitae ligula pharetra tincidunt...
+            {{-- {{ \Illuminate\Support\Str::limit($title, 30, '...') }} --}}
+        </p>
+        <h2 class="sm:grid-cols-1 text-xl font-extrabold leading-tight text-primary-950 dark:text-yellow-100">Rp. 70.000,00</h2>
     </div>
 </div>

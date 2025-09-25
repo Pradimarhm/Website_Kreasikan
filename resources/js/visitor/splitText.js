@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 i++;
                 gsap.delayedCall(0.1, ketik); // jeda ketik per huruf
             } else {
-                gsap.delayedCall(2, callback); // jeda setelah kalimat selesai
+                gsap.delayedCall(3, callback); // jeda setelah kalimat selesai
             }
         }
 

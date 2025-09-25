@@ -51,7 +51,7 @@ Route::get('/event-detail', function () {
     return view('main-visitor.event-detail');
 });
 
-Route::get('/usaha', function () {
+Route::get('/usaha-detail', function () {
     return view('main-visitor.business-detail');
 });
 
