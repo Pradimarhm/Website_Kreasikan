@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
     gsap.from(".articelPage1-cardDRight", {
         scrollTrigger: {
             trigger: ".articelPage1-cardDRight",
-            start: "top 2%",
+            start: "top 50%",
             // markers: true, // opsional untuk debug
         },
         opacity: 0,
